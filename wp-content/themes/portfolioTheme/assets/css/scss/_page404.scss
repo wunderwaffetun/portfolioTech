@@ -1,0 +1,22 @@
+.error404{
+    font-size: 50px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    .back404{
+        font-size: 14px;
+        color: #03A9F4;
+    }
+}
+@media(max-width: 740px){
+    .error404{
+        font-size: 24px;
+        .back404{
+            font-size: 12px;
+        }
+    }
+}
