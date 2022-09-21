@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const DefaultElement = document.querySelector('.Default_item')
         const hrefs = document.querySelectorAll('a')
         hrefs.forEach(element =>{
-                element.addEventListener(elem, ()=>{
+                element.addEventListener('click', ()=>{
                     inputOfSearch.value = ""
                 })
         })
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
         
             
-            document.addEventListener(elem, (event)=>{// появление и скрытие подсказки в зависимости от места клика 
+            document.addEventListener("click", (event)=>{// появление и скрытие подсказки в зависимости от места клика 
                 
                 if(event.target == inputOfSearch){
                     if(firstClick == true){
@@ -151,18 +151,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
             })
         }
         
-            buttonOfSearch.addEventListener(elem, ()=>{
+            buttonOfSearch.addEventListener("click", ()=>{
                 SearherScroll()
                 labelSearcher.textContent = ""
             })
         
         
         adviseSearcherChildren.forEach((element)=>{
-            
-                element.addEventListener(elem, () => {
+                element.addEventListener("click", () => {
                     ScrollForSingleElement(element)
                 })
-            
         })
 
 
