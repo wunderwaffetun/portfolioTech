@@ -9,11 +9,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const DefaultElement = document.querySelector('.Default_item')
         const hrefs = document.querySelectorAll('a')
         hrefs.forEach(element =>{
-            
                 element.addEventListener(elem, ()=>{
                     inputOfSearch.value = ""
                 })
-            
         })
         const coordinatesSearcher = { // значения объекта подсказки для отображения в нужном месте
             coordX: divSearcher.getBoundingClientRect().left + window.pageXOffset,
